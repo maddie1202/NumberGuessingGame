@@ -12,7 +12,7 @@ public class NumberGuessingGame
 	
 		do
 		{
-			inputSucess = true; //Reset the boolean to assume the user isn't an idiot and will enter the correct data
+			inputSucess = true; //Reset the boolean to prepare for correct input
 		
 			//Scanner input = new Scanner(System.in);
 				
@@ -29,7 +29,7 @@ public class NumberGuessingGame
 				
 			if (number < min || number > max || inputSucess == false) //Test if the data is in the correct rang
 			{
-				System.out.println("Nope! Invalid data, try agin."); //Informs stupid user that they entered the wrong data
+				System.out.println("Invalid data, try agin."); //Informs user that they entered the wrong data
 			}
 				
 		}while (number < min || number > max || inputSucess == false); //Loop back to the prompt if data is incorrect
